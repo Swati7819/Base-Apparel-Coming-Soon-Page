@@ -10,7 +10,7 @@ This is a responsive "Coming Soon" page for a fashion store, built using HTML, C
 
 
 ## Demo
-You can view the live demo [here](https://your-live-demo-link.com).
+You can view the live demo [here](https://effulgent-eclair-0e5bb8.netlify.app/)
 
 ## Features
 
