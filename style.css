@@ -25,7 +25,7 @@ header {
 
 main {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
@@ -46,9 +46,9 @@ main .image-part {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-top: -100px;
+    margin-top: -50px;
     width: 100%;
-    min-height: 60vh;
+    min-height: 100vh;
 }
 
 main .text-part h1 {
@@ -70,6 +70,7 @@ main .text-part .para {
 
 main .input-style {
     padding: 1rem;
+    margin-inline: auto ;
     border-radius: 60px;
     border: 1px solid rgb(202, 155, 158);
     width: 100%;
@@ -136,7 +137,7 @@ main .errorClass {
 .main-container-2 {
     margin-block: 100px;
     margin-inline: auto;
-    
+
 
 }
 
@@ -150,7 +151,7 @@ main .errorClass {
     line-height: 1.5;
 }
 
-/* Responsive Styles */
+/* Responsive Styles*/
 @media (min-width: 768px) {
     main {
         flex-direction: row;
@@ -195,9 +196,9 @@ main .errorClass {
     main .errorClass {
         background-position: right 1rem center;
     }
-}
+}  
 
-@media (max-width: 480px) {
+ @media (max-width: 480px) {
     main .text-part h1 {
         font-size: 2rem;
         letter-spacing: 5px;
@@ -209,5 +210,108 @@ main .errorClass {
 
     .container-2 {
         margin-block: 50px;
+        margin-inline: auto;
     }
+}  
+
+@media (max-width:768px) {
+
+    .container {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-inline: auto;
+    }
+
+    .main-container-2 {
+        margin-inline: 0.5rem;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    main .image-part {
+        order: -1;
+        /* margin-top: 50px;*/
+        background-image: url(./images/hero-mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        min-height: 70vh;
+        width: 90%;
+        margin-top: 50px;
+
+    }
+
+    .text-part {
+        text-align: center;
+        align-self: center;
+
+    }
+
+    .icon-wrapper {
+        margin-bottom: 50px;
+        margin-left: 0.5rem;
+    }
+
+    .errorText {
+        margin-top: -4rem;
+    }
+
+}
+
+
+@media (min-width:769px) and (max-width:1050px) {
+    .container {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-inline: auto;
+    }
+
+    .errorText {
+        margin-top: -4rem;
+    }
+
+
+    main {
+        flex-direction: column;
+    }
+
+    main .image-part {
+        order: -1;
+        /* margin-top: 50px;*/
+        background-image: url(./images/hero-mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        min-height: 70vh;
+        width: 90%;
+        margin-top: 50px;
+
+    }
+
+    .text-part {
+        max-width: 700px;
+        text-align: center;
+        align-self: center;
+
+
+    }
+
+    .icon-wrapper {
+        margin-bottom: 50px;
+        justify-content: center;
+
+    }
+
+
+    main .text-part h1 {
+        font-size: 5rem;
+
+    }
+
+    main .text-part .para {
+        font-size: 2rem;
+    }
+
 }
